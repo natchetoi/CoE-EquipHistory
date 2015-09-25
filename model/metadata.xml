@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" Version="1.0">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="EquipmentHistory">
+            <EntityType Name="Equipment">
+                <Key>
+                    <PropertyRef Name="EQUNR"/>
+                </Key>
+                <Property Name="EQUNR" Nullable="false" Type="Edm.String"/>
+                <Property Name="EQTYP" Type="Edm.String"/>
+                <Property Name="INVNR" Type="Edm.String"/>
+                <NavigationProperty FromRole="From_Equipment" Name="EqHistorySet" Relationship="EquipmentHistory.EquipmentEqHistory" ToRole="To_EqHistory"/>
+            </EntityType>
+            <EntityType Name="EqHistory">
+                <Key>
+                    <PropertyRef Name="EQUNR"/>
+                    <PropertyRef Name="QMDAT"/>
+                </Key>
+                <Property Name="EQUNR" Nullable="false" Type="Edm.String"/>
+                <Property Name="QMDAT" Nullable="false" Type="Edm.String"/>
+                <NavigationProperty FromRole="From_EqHistory" Name="NotificationSet" Relationship="EquipmentHistory.EqHistoryNotification" ToRole="To_Notification"/>
+                <NavigationProperty FromRole="From_EqHistory" Name="WorkOrderSet" Relationship="EquipmentHistory.EqHistoryWorkOrder" ToRole="To_WorkOrder"/>
+                <NavigationProperty FromRole="From_EqHistory" Name="CharacteristicsSet" Relationship="EquipmentHistory.EqHistoryCharacteristics" ToRole="To_Characteristics"/>
+                <NavigationProperty FromRole="From_EqHistory" Name="DrainageInfoSet" Relationship="EquipmentHistory.EqHistoryDrainageInfo" ToRole="To_DrainageInfo"/>
+                <NavigationProperty FromRole="From_EqHistory" Name="Measurements" Relationship="EquipmentHistory.EqHistoryMeasurements2" ToRole="To_Measurements"/>
+                <NavigationProperty FromRole="To_EqHistory" Name="Equipment" Relationship="EquipmentHistory.EquipmentEqHistory" ToRole="From_Equipment"/>
+            </EntityType>
+            <EntityType Name="Notification">
+                <Key>
+                    <PropertyRef Name="QMNUM"/>
+                </Key>
+                <Property Name="QMNUM" Nullable="false" Type="Edm.String"/>
+                <Property Name="EQUNR" Type="Edm.String"/>
+                <Property Name="QMDAT" Type="Edm.String"/>
+                <Property Name="IWERK" Type="Edm.String"/>
+                <Property Name="INGRP" Type="Edm.String"/>
+                <Property Name="QMART" Type="Edm.String"/>
+                <Property Name="PRIOK" Type="Edm.String"/>
+                <Property Name="AUFNR" Type="Edm.String"/>
+                <NavigationProperty FromRole="To_Notification" Name="EqHistory" Relationship="EquipmentHistory.EqHistoryNotification" ToRole="From_EqHistory"/>
+            </EntityType>
+            <EntityType Name="WorkOrder">
+                <Key>
+                    <PropertyRef Name="AUFNR"/>
+                </Key>
+                <Property Name="AUFNR" Nullable="false" Type="Edm.String"/>
+                <Property Name="EQUNR" Type="Edm.String"/>
+                <Property Name="QMDAT" Type="Edm.String"/>
+                <Property Name="AUART" Type="Edm.String"/>
+                <Property Name="KTEXT" Type="Edm.String"/>
+                <Property Name="SDATE" Type="Edm.String"/>
+                <Property Name="AUFUSER2" Type="Edm.String"/>
+                <NavigationProperty FromRole="To_WorkOrder" Name="EqHistory" Relationship="EquipmentHistory.EqHistoryWorkOrder" ToRole="From_EqHistory"/>
+            </EntityType>
+            <EntityType Name="Characteristics">
+                <Key>
+                    <PropertyRef Name="EQUNR"/>
+                    <PropertyRef Name="QMDAT"/>
+                    <PropertyRef Name="ATINN"/>
+                </Key>
+                <Property Name="EQUNR" Nullable="false" Type="Edm.String"/>
+                <Property Name="QMDAT" Nullable="false" Type="Edm.String"/>
+                <Property Name="ATINN" Nullable="false" Type="Edm.String"/>
+                <Property Name="OBJEK" Type="Edm.String"/>
+                <Property Name="KLART" Type="Edm.String"/>
+                <Property Name="ATWRT" Type="Edm.String"/>
+                <Property Name="ATFLV" Type="Edm.String"/>
+                <Property Name="ATAWE" Type="Edm.String"/>
+                <NavigationProperty FromRole="To_Characteristics" Name="EqHistory" Relationship="EquipmentHistory.EqHistoryCharacteristics" ToRole="From_EqHistory"/>
+            </EntityType>
+            <EntityType Name="DrainageInfo">
+                <Key>
+                    <PropertyRef Name="QMNUM"/>
+                </Key>
+                <Property Name="QMNUM" Nullable="false" Type="Edm.String"/>
+                <Property Name="OBJECTID" Type="Edm.String"/>
+                <Property Name="ADDRESS" Type="Edm.String"/>
+                <Property Name="NEIGHBOURHOOD" Type="Edm.String"/>
+                <Property Name="WASSINONETRENCH" Type="Edm.String"/>
+                <Property Name="WATSTATUS" Type="Edm.String"/>
+                <Property Name="SANSTATUS" Type="Edm.String"/>
+                <NavigationProperty FromRole="To_DrainageInfo" Name="EqHistory" Relationship="EquipmentHistory.EqHistoryDrainageInfo" ToRole="From_EqHistory"/>
+            </EntityType>
+            <EntityType Name="Measurements">
+                <Key>
+                    <PropertyRef Name="MDOCM"/>
+                </Key>
+                <Property Name="MDOCM" Nullable="false" Type="Edm.String"/>
+                <Property Name="EQUNR" Type="Edm.String"/>
+                <Property Name="IDATE" Type="Edm.String"/>
+                <Property Name="POINT" Type="Edm.String"/>
+                <Property Name="MDTXT" Type="Edm.String"/>
+                <Property Name="READG" Type="Edm.String"/>
+                <NavigationProperty FromRole="To_Measurements" Name="EqHistory" Relationship="EquipmentHistory.EqHistoryMeasurements2" ToRole="From_EqHistory"/>
+            </EntityType>
+            <Association Name="EqHistoryNotification">
+                <End Multiplicity="1" Role="From_EqHistory" Type="EquipmentHistory.EqHistory"/>
+                <End Multiplicity="*" Role="To_Notification" Type="EquipmentHistory.Notification"/>
+            </Association>
+            <Association Name="EqHistoryWorkOrder">
+                <End Multiplicity="1" Role="From_EqHistory" Type="EquipmentHistory.EqHistory"/>
+                <End Multiplicity="*" Role="To_WorkOrder" Type="EquipmentHistory.WorkOrder"/>
+            </Association>
+            <Association Name="EqHistoryCharacteristics">
+                <End Multiplicity="1" Role="From_EqHistory" Type="EquipmentHistory.EqHistory"/>
+                <End Multiplicity="*" Role="To_Characteristics" Type="EquipmentHistory.Characteristics"/>
+            </Association>
+            <Association Name="EqHistoryDrainageInfo">
+                <End Multiplicity="1" Role="From_EqHistory" Type="EquipmentHistory.EqHistory"/>
+                <End Multiplicity="0..1" Role="To_DrainageInfo" Type="EquipmentHistory.DrainageInfo"/>
+            </Association>
+            <Association Name="EqHistoryMeasurements2">
+                <End Multiplicity="1" Role="From_EqHistory" Type="EquipmentHistory.EqHistory"/>
+                <End Multiplicity="*" Role="To_Measurements" Type="EquipmentHistory.Measurements"/>
+            </Association>
+            <Association Name="EquipmentEqHistory">
+                <End Multiplicity="1" Role="From_Equipment" Type="EquipmentHistory.Equipment"/>
+                <End Multiplicity="*" Role="To_EqHistory" Type="EquipmentHistory.EqHistory"/>
+            </Association>
+            <EntityContainer Name="default" m:IsDefaultEntityContainer="true">
+                <EntitySet EntityType="EquipmentHistory.Equipment" Name="EquipmentSet"/>
+                <EntitySet EntityType="EquipmentHistory.EqHistory" Name="EqHistorySet"/>
+                <EntitySet EntityType="EquipmentHistory.Notification" Name="NotificationSet"/>
+                <EntitySet EntityType="EquipmentHistory.WorkOrder" Name="WorkOrderSet"/>
+                <EntitySet EntityType="EquipmentHistory.Characteristics" Name="CharacteristicsSet"/>
+                <EntitySet EntityType="EquipmentHistory.DrainageInfo" Name="DrainageInfoSet"/>
+                <EntitySet EntityType="EquipmentHistory.Measurements" Name="MeasurementsSet"/>
+                <AssociationSet Association="EquipmentHistory.EqHistoryNotification" Name="EqHistoryNotificationSet">
+                    <End EntitySet="EqHistorySet" Role="From_EqHistory"/>
+                    <End EntitySet="NotificationSet" Role="To_Notification"/>
+                </AssociationSet>
+                <AssociationSet Association="EquipmentHistory.EqHistoryWorkOrder" Name="EqHistoryWorkOrderSet">
+                    <End EntitySet="EqHistorySet" Role="From_EqHistory"/>
+                    <End EntitySet="WorkOrderSet" Role="To_WorkOrder"/>
+                </AssociationSet>
+                <AssociationSet Association="EquipmentHistory.EqHistoryCharacteristics" Name="EqHistoryCharacteristicsSet">
+                    <End EntitySet="EqHistorySet" Role="From_EqHistory"/>
+                    <End EntitySet="CharacteristicsSet" Role="To_Characteristics"/>
+                </AssociationSet>
+                <AssociationSet Association="EquipmentHistory.EqHistoryDrainageInfo" Name="EqHistoryDrainageInfoSet">
+                    <End EntitySet="EqHistorySet" Role="From_EqHistory"/>
+                    <End EntitySet="DrainageInfoSet" Role="To_DrainageInfo"/>
+                </AssociationSet>
+                <AssociationSet Association="EquipmentHistory.EqHistoryMeasurements2" Name="EqHistoryMeasurements2Set">
+                    <End EntitySet="EqHistorySet" Role="From_EqHistory"/>
+                    <End EntitySet="MeasurementsSet" Role="To_Measurements"/>
+                </AssociationSet>
+                <AssociationSet Association="EquipmentHistory.EquipmentEqHistory" Name="EquipmentEqHistorySet">
+                    <End EntitySet="EquipmentSet" Role="From_Equipment"/>
+                    <End EntitySet="EqHistorySet" Role="To_EqHistory"/>
+                </AssociationSet>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

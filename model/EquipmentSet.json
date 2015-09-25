@@ -1,0 +1,118 @@
+[{
+	"EQUNR": "DR0255694",
+	"EQTYP": "D-Drainage Operations",
+	"EQART" : "DRSERVAPP",
+	"EQKTU": "13142-64 Street NW",
+	"GROES" : "4\" x \"1",
+	"BRGEW" : "85",
+	"WARPL" : "2303 Service Kennedale",
+	"MATNR" : "11344443",
+	"INVNR" : "Drainage Customer Service",
+	"SERNR" : "421343252345234",
+	"OBJECTID" : "25997762",
+	"WATLOCATION1" : "10M NORTH OF NORTH PL OF 108 AVENUE",
+	"SANLOCATION1" : "38.10M NORTH OF NORTH PL OF 108 AVENUE",
+	"SANMAINON" : "135 Street",
+	"STORMNUMBER" : "R-811",
+	"STORMPIPESIZE" : "150",
+	"__metadata": {
+		"uri": "EquipmentSet('DR0255694')",
+		"type": "EquipmentHistory.Equipment"
+	},
+	"EqHistorySet": {
+		"__deferred": {
+			"uri": "EquipmentSet('DR0255694')/EqHistorySet"
+		}
+	}
+}, {
+	"EQUNR": "DR377858",
+	"EQTYP": "D-Drainage Operations",
+	"EQART" : "DRSERVAPP",
+	"EQKTU": "13142-64 Street NW",
+	"GROES" : "4\" x \"1",
+	"BRGEW" : "85",
+	"WARPL" : "2303 Service Kennedale",
+	"MATNR" : "11344443",
+	"INVNR" : "Drainage Customer Service",
+	"SERNR" : "421343252345234",
+	"OBJECTID" : "25997762",
+	"WATLOCATION1" : "10M NORTH OF NORTH PL OF 108 AVENUE",
+	"SANLOCATION1" : "38.10M NORTH OF NORTH PL OF 108 AVENUE",
+	"SANMAINON" : "135 Street",
+	"STORMNUMBER" : "R-811",
+	"STORMPIPESIZE" : "150",
+	"__metadata": {
+		"uri": "EquipmentSet('DR377858')",
+		"type": "EquipmentHistory.Equipment"
+	},
+	"EqHistorySet": {
+		"__deferred": {
+			"uri": "EquipmentSet('DR377858')/EqHistorySet"
+		}
+	}
+}, {
+	"EQUNR": "DR377906",
+	"EQTYP": "STORMWATER LAKE/PO",
+	"INVNR": "Enviromental services MWC",
+	"EQART" : "DRSERVAPP",
+	"EQKTU": "13142-64 Street NW",
+	"GROES" : "4\" x \"1",
+	"BRGEW" : "85",
+	"WARPL" : "2303 Service Kennedale",
+	"MATNR" : "11344443",
+	"SERNR" : "421343252345234",
+	"OBJECTID" : "25997762",
+	"WATLOCATION1" : "10M NORTH OF NORTH PL OF 108 AVENUE",
+	"SANLOCATION1" : "38.10M NORTH OF NORTH PL OF 108 AVENUE",
+	"SANMAINON" : "135 Street",
+	"STORMNUMBER" : "R-811",
+	"STORMPIPESIZE" : "150",	
+	"__metadata": {
+		"uri": "EquipmentSet('DR377906')",
+		"type": "EquipmentHistory.Equipment"
+	},
+	"EqHistorySet": {
+		"__deferred": {
+			"uri": "EquipmentSet('DR377906')/EqHistorySet"
+		}
+	}
+}, {
+	"EQUNR": "DR377903",
+	"EQTYP": "D-Drainage Operations",
+	"EQART" : "DRSERVAPP",
+	"EQKTU": "13142-64 Street NW",
+	"GROES" : "4\" x \"1",
+	"BRGEW" : "85",
+	"WARPL" : "2303 Service Kennedale",
+	"MATNR" : "11344443",
+	"INVNR" : "Drainage Customer Service",
+	"SERNR" : "421343252345234",
+	"OBJECTID" : "25997762",
+	"WATLOCATION1" : "10M NORTH OF NORTH PL OF 108 AVENUE",
+	"SANLOCATION1" : "38.10M NORTH OF NORTH PL OF 108 AVENUE",
+	"SANMAINON" : "135 Street",
+	"STORMNUMBER" : "R-811",
+	"STORMPIPESIZE" : "150",
+	"__metadata": {
+		"uri": "EquipmentSet('DR377903')",
+		"type": "EquipmentHistory.Equipment"
+	},
+	"EqHistorySet": {
+		"__deferred": {
+			"uri": "EquipmentSet('DR377903')/EqHistorySet"
+		}
+	}
+}, {
+	"EQUNR": "DR377858",
+	"EQTYP": "D-Drainage Operations",
+	"INVNR": "SLP PRK on 69 av NWC at 199 st",
+	"__metadata": {
+		"uri": "EquipmentSet('DR377858')",
+		"type": "EquipmentHistory.Equipment"
+	},
+	"EqHistorySet": {
+		"__deferred": {
+			"uri": "EquipmentSet('DR377858')/EqHistorySet"
+		}
+	}
+}]

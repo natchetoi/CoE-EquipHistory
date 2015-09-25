@@ -1,0 +1,17 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="view.Notification">
+	<Page title="Notification #{QMNUM}" icon="sap-icon://clinical-tast-tracker">
+		<content>
+		
+		<Input width="100%" id="__input0" value="Equipment: {EQUNR}"/>
+		
+		<Input width="100%" id="__input1" value="Date: {QMDAT}"/>
+		
+		<Input width="100%" id="__input2" value="Planning Plant: {IWERK}"/>
+		
+		<Input width="100%" id="__input3" value="Planner Group: {INGRP}"/>
+		
+		<Input width="100%" id="__input4" value="Priority: {PRIOK}"/>
+		
+		</content>
+	</Page>
+</core:View>

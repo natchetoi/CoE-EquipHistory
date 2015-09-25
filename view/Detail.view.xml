@@ -1,0 +1,190 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns="sap.m" controllerName="EquipmentHistory.view.Detail">
+	<Page id="detailPage" showNavButton="{device&gt;/isPhone}" navButtonPress="onNavBack" class="sapUiFioriObjectPage" title="{i18n&gt;detailTitle}">
+		<content>
+			<ObjectHeader title="{QMDAT}" number="{EQUNR}" numberUnit="">
+				<attributes>
+					<ObjectAttribute text=""/>
+				</attributes>
+				<firstStatus>
+					<ObjectStatus text=""/>
+				</firstStatus>
+			</ObjectHeader>
+			<IconTabBar select="onDetailSelect" id="idIconTabBar">
+				<items>
+					<IconTabFilter key="Details" icon="sap-icon://inventory" text="Equipment">
+						<content>
+							<f:SimpleForm id="detailForm" minWidth="1024" maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1">
+								<f:content>
+									<Label id="label1" text="Equpment"/>									
+									<Text id="text1" text="DRSRV-N-13000"/>									
+									<Label id="label2" text="Description"/>									
+									<Text id="text2" text="13142-64 Street NW"/>									
+									<Label id="label3" text="Category"/>									
+									<Text id="text3" text="D-Drainage Operations"/>								
+									<Label id="label4" text="Type"/>									
+									<Text id="text4" text="Service Application"/>								
+									<Label id="label5" text="Plant"/>									
+									<Text id="text5" text="2303 Service Kennedale"/>								
+									<Label id="label6" text="Work Center"/>									
+									<Text id="text6" text="Drainage Customer Service"/>								
+									<Label id="label7" text="POSSE WASS " />									
+									<Text id="text7" text="Information"/>		
+									<Label id="label47" text="POSSE ID"/>									
+									<Text id="text47" text="25997762"/>		
+									<Label id="label8" text="Water Location"/>									
+									<Text id="text8" text="10M NORTH OF NORTH PL OF 108 AVENUE"/>		
+									<Label id="label9" text="Sanit.Location"/>									
+									<Text id="text9" text="38.10M NORTH OF NORTH PL OF 108 AVENUE"/>		
+									<Label id="label11" text="Sani.main on"/>									
+									<Text id="text11" text="135 Street"/>		
+									<Label id="label10" text="Storm #"/>									
+									<Text id="text10" text="R-811"/>		
+									<Label id="label12" text="Storm size"/>									
+									<Text id="text12" text="150"/>	
+							   </f:content>
+							</f:SimpleForm>
+						</content>
+					</IconTabFilter>
+					<IconTabFilter text="Notification" count="10" icon="sap-icon://notification-2" iconColor="Positive" id="__filter8">
+					    <content>
+					    <List noDataText="Drop list items here" id="__list3">
+					        <customData>
+					            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data13"/>
+					        </customData>
+					        <items>
+					            <StandardListItem type="Navigation" counter="0" title="N1 4315884" description="PW St.0195N Sanitry Dry Well Pumps" icon="sap-icon://picture" id="__item18"/>
+					            <StandardListItem type="Navigation" counter="0" title="N1 4316083" description="DR - MAINTNC - KENNEDALE INDUSTRIAL" icon="sap-icon://picture" id="__item19"/>
+					            <StandardListItem type="Navigation" counter="0" title="N1 4318272" description="SLP PRK on 199 St. WOF at 69 av" icon="sap-icon://picture" id="__item20"/>
+				            </items></List>
+					    </content>
+					</IconTabFilter>
+					<IconTabFilter text="Work Order" count="10" icon="sap-icon://technical-object" iconColor="Neutral" id="__filter9">
+					    <content>
+					        <f:SimpleForm editable="false" layout="ResponsiveGridLayout" id="__form1">
+					            <f:content>
+					                <core:Title text="Work Order 81018925 WP Glastonbury1" id="__title1"/>
+					                <Label text="Work Center" id="__label5"/>
+					                <Input width="100%" id="__input3" editable="false" value="ES-TM Environmental Services"/>
+					                <Label text="Type" id="__label1005"/>
+					                <Input width="100%" id="__input4" value="PM01 - Breakdown" editable="false"/>
+					                <Label text="Func.Location" id="__label6"/>
+					                <Input width="100%" id="__input5" editable="false" value="C-NE-2080-DR-SRV-DR-CUST SVRS-BELVEDERE"/>
+					                <Label text="LongText" id="__label1006"/>
+									<TextArea wrapping="None" id="__area0" editable="false" value="WP Glastonbury 1 Mobile status received by user CHADEN"/>
+					              </f:content>
+					        </f:SimpleForm>
+					    </content>
+					</IconTabFilter>
+					<IconTabFilter text="Characteristics" count="10" icon="sap-icon://tags" iconColor="Default" id="__filter6">
+					    <content>
+					        <Table noDataText="Drop column list items here and columns in the area above" id="__table0" itemPress="{path: CharacteristicsSet}" items="">
+					            <customData>
+					                <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data2"/>
+					            </customData>
+					            <items>
+					                <ColumnListItem counter="0" id="__item0">
+					                    <cells>
+					                        <Text text="FLUID_CAPACITIES" maxLines="0" id="__text1"/>
+					                        <Text text="Engine Oil Capacity" maxLines="0" id="__text2"/>
+					                        <Text text="4 LT" maxLines="0" id="__text3"/></cells>
+					                </ColumnListItem>
+					                <ColumnListItem counter="0" id="__item1">
+					                    <cells>
+					                        <Text text="CS_SERVICE_CALL" maxLines="0" id="__text4"/>
+					                        <Text text="Distance to Cleanout" maxLines="0" id="__text5"/>
+					                        <Text text="12 M" maxLines="0" id="__text6"/></cells>
+					                </ColumnListItem>
+					                <ColumnListItem counter="0" id="__item111">
+					                    <cells>
+					                        <Text text="CS_SERVICE_CALL" maxLines="0" id="__text411"/>
+					                        <Text text="Main Line OK" maxLines="0" id="__text511"/>
+					                        <Text text="Y" maxLines="0" id="__text611"/></cells>
+					                </ColumnListItem></items>
+					            <columns>
+					                <Column id="__column0">
+					                    <header>
+					                        <Label text="Class" id="__label0"/>
+					                    </header>
+					                </Column>
+					                <Column id="__column1">
+					                    <header>
+					                        <Label text="Characteristic" id="__label1"/>
+					                    </header>
+					                </Column>
+					                <Column id="__column2">
+					                    <header>
+					                        <Label text="Value" id="__label2"/>
+					                    </header>
+					                </Column></columns></Table>
+					    </content>
+					</IconTabFilter>
+					<IconTabFilter text="Measurements" count="10" icon="sap-icon://compare-2" iconColor="Default" id="__filter11">
+					    <content>
+					        <List noDataText="Drop list items here" id="__list1">
+					            <customData>
+					                <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data11"/>
+					            </customData>
+					            <items>
+					                <StandardListItem type="Navigation" counter="0" title="Foundation to Main" description="12 M" icon="sap-icon://picture" id="__item9"/>
+					                <StandardListItem type="Navigation" counter="0" title="Distance to Blockage" description="5 M" icon="sap-icon://picture" id="__item10"/>
+					                <StandardListItem type="Navigation" counter="0" title="Total Rodded" description="8 M" icon="sap-icon://picture" id="__item11"/></items></List>
+					    </content>
+					</IconTabFilter>
+					<IconTabFilter text="WorkSheet" count="10" icon="sap-icon://task" iconColor="Neutral" id="__filter10">
+					    <content>
+					    <Table noDataText="Drop column list items here and columns in the area above" id="__table1">
+					        <customData>
+					            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data10"/>
+					        </customData>
+					        <items>
+					            <ColumnListItem counter="0" id="__item7">
+					                <cells>
+					                    <Text text="Main Line OK √" maxLines="0" id="__text10"/>
+					                    <Text text="Released √" maxLines="0" id="__text11"/>
+					                    <Text text="Rainfall related?" maxLines="0" id="__text12"/></cells>
+					            </ColumnListItem>
+					            <ColumnListItem counter="0" id="__item8">
+					                <cells>
+					                    <Text text="City Trees √" maxLines="0" id="__text13"/>
+					                    <Text text="EPCOR related" maxLines="0" id="__text14"/>
+					                    <Text text="Accessed Basement √" maxLines="0" id="__text15"/></cells>
+					            </ColumnListItem></items>
+					        <columns>
+					            <Column id="__column3">
+					                <header>
+					                    <Label text="Service Call" id="__label7"/>
+					                </header>
+					            </Column>
+					            <Column id="__column4">
+					                <header>
+					                    <Label text="End Results" id="__label8"/>
+					                </header>
+					            </Column>
+					            <Column id="__column5">
+					                <header>
+					                    <Label text="Storm Response" id="__label9"/>
+					                </header>
+					            </Column></columns></Table>
+					    </content>
+					</IconTabFilter>
+					<IconTabFilter text="Route" count="10" icon="sap-icon://taxi" iconColor="Positive" id="__filter1">
+					    <content>
+					        <Image src="/images/MAP.png" width="" height="" id="__image0"/>
+					    </content>
+					</IconTabFilter>
+					<IconTabFilter text="Technical" count="10" icon="sap-icon://tree" iconColor="Neutral" id="__filter2">
+					    <content>
+					        <Image src="images/pump_Draw1.png" width="" height="" id="__image1" activeSrc=""/>
+					        <Image src="images/pump_isometric-drawing.jpg" width="" height="" id="__image2"/>
+					    </content>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+			<GroupHeaderListItem counter="0" id="__item13"/>
+		</content>
+		<footer>
+			<Toolbar>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

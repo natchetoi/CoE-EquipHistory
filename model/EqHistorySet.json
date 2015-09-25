@@ -1,0 +1,435 @@
+[{
+	"EQUNR": "DR0255694",
+	"QMDAT": "2003-11-20",
+	"__metadata": {
+		"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2003-11-20')",
+		"type": "EquipmentHistory.EqHistory"
+	},
+	"Equipment": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2003-11-20')/Equipment"
+		},
+	"data" : {
+	"EQUNR": "DR0255694",
+	"EQTYP": "D-Drainage Operations",
+	"EQART" : "DRSERVAPP",
+	"EQKTU": "13142-64 Street NW",
+	"GROES" : "4\" x \"1",
+	"BRGEW" : "85",
+	"WARPL" : "2303 Service Kennedale",
+	"MATNR" : "11344443",
+	"INVNR" : "Drainage Customer Service",
+	"SERNR" : "421343252345234",
+	"OBJECTID" : "25997762",
+	"WATLOCATION1" : "10M NORTH OF NORTH PL OF 108 AVENUE",
+	"SANLOCATION1" : "38.10M NORTH OF NORTH PL OF 108 AVENUE",
+	"SANMAINON" : "135 Street",
+	"STORMNUMBER" : "R-811",
+	"STORMPIPESIZE" : "150"
+	},
+	"__metadata": {
+		"uri": "EquipmentSet('DR0255694')",
+		"type": "EquipmentHistory.Equipment"
+	}
+ },
+	"NotificationSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2003-11-20')/NotificationSet"
+		},
+		"data" : [{
+	"QMNUM": "4315884",
+	"QMART": "N1",
+	"QMTXT" : "PW St.0195N Sanitry Dry Well Pumps",
+	"EQUNR": "DR0255694",
+	"QMDAT": "203-03-12",
+	"IWERK": "2303",
+	"INGRP": "23",
+	"PRIOK": "High"
+},{
+	"QMNUM": "4316083",
+	"QMART": "N1",
+	"QMTXT" : "DR - MAINTNC - KENNEDALE INDUSTRIAL",
+	"EQUNR": "DR0255694",
+	"QMDAT": "203-03-12",
+	"IWERK": "2303",
+	"INGRP": "23",
+	"PRIOK": "High"
+},{	"QMNUM": "4318272",
+	"QMART": "N1",
+	"QMTXT" : "SLP PRK on 199 St. WOF at 69 av",
+	"EQUNR": "DR0255694",
+	"QMDAT": "203-03-12",
+	"IWERK": "2303",
+	"INGRP": "23",
+	"PRIOK": "High"			
+		}]
+	},
+	"WorkOrderSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2003-11-20')/WorkOrderSet"
+		},
+		"data": {
+	"AUFNR": "80010667",
+	"AUFART": "PM01 - Breakdown",
+	"EQUNR": "DR0255694",
+	"QMDAT": "2013-05-11",
+	"KTEXT":"Work Order 81018925 WP Glastonbury1",
+	"WERGW" : "ES-TM Environmental Services",
+	"TPLNR": "C-NE-2080-DR-SRV-DR-CUST SVRS-BELVEDERE",
+	"TDLINE" : "WP Glastonbury 1 Mobile status received by user CHADEN"			
+		}
+	},
+	"CharacteristicsSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2003-11-20')/CharacteristicsSet",
+		"data" : [{
+	"EQUNR": "DR0255694",
+	"QMDAT": "2013-01-02",
+	"ATINN": "Engine Oil Capacity",
+	"ATFLV": "2 LT"
+}, {
+	"EQUNR": "DR0255694",
+	"QMDAT": "2015-01-10",
+	"ATINN": "Catchbasin Lead broken",
+	"OBJEK": "",
+	"ATWRT": "",
+	"ATFLV": "Yes"
+}, {
+	"EQUNR": "DR0255694",
+	"QMDAT": "2013-01-02",
+	"ATINN": "Catchbasin Cover Off",
+	"ATFLV": "Yes"
+}, {
+	"EQUNR": "DR0255694",
+	"QMDAT": "2015-01-10",
+	"ATINN": "Main Line Flushed",
+	"ATFLV": "Yes"
+}]}
+	},
+	"DrainageInfoSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2003-11-20')/DrainageInfoSet"
+		},
+	"data" :	{
+	"QMNUM": "1016198",
+	"OBJECTID": "DR0255694",
+	"ADDRESS": "123 JASPER AVE 12",
+	"NEIGHBOURHOOD": "DOWNTOWN",
+	"WASSINONETRENCH": "12 M",
+	"WATSTATUS": "INSTALLED",
+	"SANSTATUS": "INSTALLED"			
+		}
+	},
+	"Measurements": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2003-11-20')/Measurements"
+		},
+	"data" :	{
+	"MDOCM": "13455",
+	"EQUNR": "DR0255694",
+	"IDATE": "2013-02-13",
+	"READG": "23 M"
+		}
+	},
+	"EqHistorySet": {
+		"__deferred": {
+			"uri": "EquipmentSet('DR0255694')/EqHistorySet"
+		}
+	}
+}, {
+	"EQUNR": "DR0255694",
+	"QMDAT": "2007-03-12",
+	"__metadata": {
+		"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-03-12')",
+		"type": "EquipmentHistory.EqHistory"
+	},
+	"NotificationSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-03-12')/NotificationSet"
+		}
+	},
+	"WorkOrderSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-03-12')/WorkOrderSet"
+		}
+	},
+	"CharacteristicsSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-03-12')/CharacteristicsSet"
+		}
+	},
+	"DrainageInfoSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-03-12')/DrainageInfoSet"
+		}
+	},
+	"Measurements": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-03-12')/Measurements"
+		}
+	},
+	"Equipment": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-03-12')/Equipment"
+		}
+	}
+}, {
+	"EQUNR": "DR0255694",
+	"QMDAT": "2007-10-04",
+	"__metadata": {
+		"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-10-04')",
+		"type": "EquipmentHistory.EqHistory"
+	},
+	"NotificationSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-10-04')/NotificationSet"
+		}
+	},
+	"WorkOrderSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-10-04')/WorkOrderSet"
+		}
+	},
+	"CharacteristicsSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-10-04')/CharacteristicsSet"
+		}
+	},
+	"DrainageInfoSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-10-04')/DrainageInfoSet"
+		}
+	},
+	"Measurements": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-10-04')/Measurements"
+		}
+	},
+	"Equipment": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR0255694',QMDAT='2007-10-04')/Equipment"
+		}
+	}
+}, {
+	"EQUNR": "DR377858",
+	"QMDAT": "2009-05-11",
+	"__metadata": {
+		"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2009-05-11')",
+		"type": "EquipmentHistory.EqHistory"
+	},
+	"NotificationSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2009-05-11')/NotificationSet"
+		}
+	},
+	"WorkOrderSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2009-05-11')/WorkOrderSet"
+		}
+	},
+	"CharacteristicsSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2009-05-11')/CharacteristicsSet"
+		}
+	},
+	"DrainageInfoSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2009-05-11')/DrainageInfoSet"
+		}
+	},
+	"Measurements": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2009-05-11')/Measurements"
+		}
+	},
+	"Equipment": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2009-05-11')/Equipment"
+		}
+	}
+}, {
+	"EQUNR": "DR377858",
+	"QMDAT": "2012-03-14",
+	"__metadata": {
+		"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2012-03-14')",
+		"type": "EquipmentHistory.EqHistory"
+	},
+	"NotificationSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2012-03-14')/NotificationSet"
+		}
+	},
+	"WorkOrderSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2012-03-14')/WorkOrderSet"
+		}
+	},
+	"CharacteristicsSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2012-03-14')/CharacteristicsSet"
+		}
+	},
+	"DrainageInfoSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2012-03-14')/DrainageInfoSet"
+		}
+	},
+	"Measurements": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2012-03-14')/Measurements"
+		}
+	},
+	"Equipment": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2012-03-14')/Equipment"
+		}
+	}
+}, {
+	"EQUNR": "DR377858",
+	"QMDAT": "2013-08-16",
+	"__metadata": {
+		"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2013-08-16')",
+		"type": "EquipmentHistory.EqHistory"
+	},
+	"NotificationSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2013-08-16')/NotificationSet"
+		}
+	},
+	"WorkOrderSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2013-08-16')/WorkOrderSet"
+		}
+	},
+	"CharacteristicsSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2013-08-16')/CharacteristicsSet"
+		}
+	},
+	"DrainageInfoSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2013-08-16')/DrainageInfoSet"
+		}
+	},
+	"Measurements": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2013-08-16')/Measurements"
+		}
+	},
+	"Equipment": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377858',QMDAT='2013-08-16')/Equipment"
+		}
+	}
+}, {
+	"EQUNR": "DR377903",
+	"QMDAT": "2014-01-21",
+	"__metadata": {
+		"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-01-21')",
+		"type": "EquipmentHistory.EqHistory"
+	},
+	"NotificationSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-01-21')/NotificationSet"
+		}
+	},
+	"WorkOrderSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-01-21')/WorkOrderSet"
+		}
+	},
+	"CharacteristicsSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-01-21')/CharacteristicsSet"
+		}
+	},
+	"DrainageInfoSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-01-21')/DrainageInfoSet"
+		}
+	},
+	"Measurements": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-01-21')/Measurements"
+		}
+	},
+	"Equipment": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-01-21')/Equipment"
+		}
+	}
+}, {
+	"EQUNR": "DR377903",
+	"QMDAT": "2014-12-30",
+	"__metadata": {
+		"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-12-30')",
+		"type": "EquipmentHistory.EqHistory"
+	},
+	"NotificationSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-12-30')/NotificationSet"
+		}
+	},
+	"WorkOrderSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-12-30')/WorkOrderSet"
+		}
+	},
+	"CharacteristicsSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-12-30')/CharacteristicsSet"
+		}
+	},
+	"DrainageInfoSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-12-30')/DrainageInfoSet"
+		}
+	},
+	"Measurements": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-12-30')/Measurements"
+		}
+	},
+	"Equipment": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377903',QMDAT='2014-12-30')/Equipment"
+		}
+	}
+}, {
+	"EQUNR": "DR377906",
+	"QMDAT": "2015-08-12",
+	"__metadata": {
+		"uri": "EqHistorySet(EQUNR='DR377906',QMDAT='2015-08-12')",
+		"type": "EquipmentHistory.EqHistory"
+	},
+	"NotificationSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377906',QMDAT='2015-08-12')/NotificationSet"
+		}
+	},
+	"WorkOrderSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377906',QMDAT='2015-08-12')/WorkOrderSet"
+		}
+	},
+	"CharacteristicsSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377906',QMDAT='2015-08-12')/CharacteristicsSet"
+		}
+	},
+	"DrainageInfoSet": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377906',QMDAT='2015-08-12')/DrainageInfoSet"
+		}
+	},
+	"Measurements": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377906',QMDAT='2015-08-12')/Measurements"
+		}
+	},
+	"Equipment": {
+		"__deferred": {
+			"uri": "EqHistorySet(EQUNR='DR377906',QMDAT='2015-08-12')/Equipment"
+		}
+	}
+}]
